@@ -25,3 +25,10 @@ server:
 app:
   max-order-per-user: 10
   payment-timeout: 300
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
